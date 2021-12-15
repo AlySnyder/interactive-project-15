@@ -171,135 +171,135 @@ const covidData = [
   },
   {
     state: 'NH',
-    population: '1,359,711',
-    cases: '178,967',
-    deaths: '1,810'
+    population: '1359711',
+    cases: '178967',
+    deaths: '1810'
   },
   {
     state: 'NJ',
-    population: '8,882,190',
-    cases: '1,311,119',
-    deaths: '28,613'
+    population: '8882190',
+    cases: '1311119',
+    deaths: '28613'
   },
   {
     state: 'NM',
-    population: '2,096,829',
-    cases: '332,975',
-    deaths: '5,491'
+    population: '2096829',
+    cases: '332975',
+    deaths: '5491'
   },
   {
     state: 'NY',
-    population: '19,453,561',
-    cases: '2,962,349',
-    deaths: '58,864'
+    population: '19453561',
+    cases: '2962349',
+    deaths: '58864'
   },
   {
     state: 'NC',
-    population: '10,488,084',
-    cases: '1,577,154',
-    deaths: '19,033'
+    population: '10488084',
+    cases: '1577154',
+    deaths: '19033'
   },
   {
     state: 'ND',
-    population: '762,062',
-    cases: '167,818',
-    deaths: '1,962'
+    population: '762062',
+    cases: '167818',
+    deaths: '1962'
   },
   {
     state: 'OH',
-    population: '4903185',
-    cases: '854229',
-    deaths: '16285'
+    population: '11689100',
+    cases: '1796951',
+    deaths: '27594'
   },
   {
     state: 'OK',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '3956971',
+    cases: '684340',
+    deaths: '11336'
   },
   {
     state: 'OR',
-    population: '4903185',
-    cases: '854229',
-    deaths: '16285'
+    population: '4217737',
+    cases: '402436',
+    deaths: '5469'
   },
   {
     state: 'PA',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '12801989',
+    cases: '1850578',
+    deaths: '34731'
   },
   {
     state: 'RI',
-    population: '4903185',
-    cases: '854229',
-    deaths: '16285'
+    population: '1059361',
+    cases: '204954',
+    deaths: '2975'
   },
   {
     state: 'SC',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '5148714',
+    cases: '932938',
+    deaths: '14419'
   },
   {
     state: 'SD',
-    population: '4903185',
-    cases: '854229',
-    deaths: '16285'
+    population: '884659',
+    cases: '172300',
+    deaths: '2411'
   },
   {
     state: 'TN',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '6829174',
+    cases: '1341702',
+    deaths: '17818'
   },
   {
     state: 'TX',
-    population: '4903185',
-    cases: '854229',
-    deaths: '16285'
+    population: '28995881',
+    cases: '4401029',
+    deaths: '75126'
   },
   {
     state: 'UT',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '3205958',
+    cases: '614270',
+    deaths: '3673'
   },
   {
     state: 'VT',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '623989',
+    cases: '56661',
+    deaths: '440'
   },
   {
     state: 'VA',
-    population: '4903185',
-    cases: '854229',
-    deaths: '16285'
+    population: '8535519',
+    cases: '1003110',
+    deaths: '14992'
   },
   {
     state: 'WA',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '7614893',
+    cases: '798275',
+    deaths: '9659'
   },
   {
     state: 'WV',
-    population: '4903185',
-    cases: '854229',
-    deaths: '16285'
+    population: '1792147',
+    cases: '310245',
+    deaths: '5142'
   },
   {
     state: 'WI',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '5822434',
+    cases: '1038465',
+    deaths: '10483'
   },
   {
     state: 'WY',
-    population: '731545',
-    cases: '148380',
-    deaths: '857'
+    population: '578759',
+    cases: '113233',
+    deaths: '1502'
   }
   
   
