@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Covid2021 extends Model {}
+class Covid extends Model {}
 
-Covid2021.init(
+Covid.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -15,25 +15,37 @@ Covid2021.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    population: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 10,
+      validate : {
+        isNumeric: true
+      }
+    },
     cases: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      defaultValue: 10,
+      validate : {
+        isNumeric: true
+      }
     },
     deaths: {
       type: DataTypes.INTEGER,
       allowNull: false,
-    },
-    recoveries: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
+      defaultValue: 10,
+      validate : {
+        isNumeric: true
+      }
     },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'covid2021',
+    modelName: 'covid',
   }
 );
 
-module.exports = Covid2021;
+module.exports = Covid;

@@ -1,7 +1,15 @@
 const User = require('./User');
-const Covid2020 = require('./Covid2020');
-const Covid2021 = require('./Covid2021');
+const Covid = require('./Covid');
 const States = require('./States');
 
+/*Covid.belongsTo(States, {
+    foreignKey: "covid_data_id",
+    onDelete: "CASCADE"
+  });
 
-module.exports = { User, Covid2020, Covid2021, States };
+  States.hasMany(Covid, {
+    foreignKey: "covid_data_id",
+  });
+  */
+
+module.exports = { User, Covid, States };

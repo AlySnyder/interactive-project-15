@@ -15,21 +15,13 @@ States.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    covid_2020_data: {
+    covid_data_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-          model: 'Covid2020',
+          model: 'covid',
           key: 'id'
       }
-    },
-    covid_2021_data: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'Covid2021',
-        key: 'id'
-    }
     }
   },
   {
