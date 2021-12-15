@@ -50,155 +50,155 @@ const statesData = [
     covid_data_id: 12
   },
   {
-    state: 'Alabama',
+    state: 'Illinois',
     covid_data_id: 13
   },
   {
-    state: 'Alaska',
+    state: 'Indiana',
     covid_data_id: 14
   },
   {
-    state: 'Alabama',
+    state: 'Iowa',
     covid_data_id: 15
   },
   {
-    state: 'Alaska',
+    state: 'Kansas',
     covid_data_id: 16
   },
   {
-    state: 'Alabama',
+    state: 'Kentucky',
     covid_data_id: 17
   },
   {
-    state: 'Alaska',
+    state: 'Lousiana',
     covid_data_id: 18
   },
   {
-    state: 'Alabama',
+    state: 'Maine',
     covid_data_id: 19
   },
   {
-    state: 'Alaska',
+    state: 'Maryland',
     covid_data_id: 20
   },
   {
-    state: 'Alabama',
+    state: 'Massachusetts',
     covid_data_id: 21
   },
   {
-    state: 'Alaska',
+    state: 'Michigan',
     covid_data_id: 22
   },
   {
-    state: 'Alabama',
+    state: 'Minnesota',
     covid_data_id: 23
   },
   {
-    state: 'Alaska',
+    state: 'Mississippi',
     covid_data_id: 24
   },
   {
-    state: 'Alabama',
+    state: 'Missouri',
     covid_data_id: 25
   },
   {
-    state: 'Alaska',
+    state: 'Montana',
     covid_data_id: 26
   },
   {
-    state: 'Alabama',
+    state: 'Nebraska',
     covid_data_id: 27
   },
   {
-    state: 'Alaska',
+    state: 'Nevada',
     covid_data_id: 28
   },
   {
-    state: 'Alabama',
+    state: 'New Hampshire',
     covid_data_id: 29
   },
   {
-    state: 'Alaska',
+    state: 'New Jersey',
     covid_data_id: 30
   },
   {
-    state: 'Alabama',
+    state: 'New Mexico',
     covid_data_id: 31
   },
   {
-    state: 'Alaska',
+    state: 'New York',
     covid_data_id: 32
   },
   {
-    state: 'Alabama',
+    state: 'North Carolina',
     covid_data_id: 33
   },
   {
-    state: 'Alaska',
+    state: 'North Dakota',
     covid_data_id: 34
   },
   {
-    state: 'Alabama',
+    state: 'Ohio',
     covid_data_id: 35
   },
   {
-    state: 'Alaska',
+    state: 'Oklahoma',
     covid_data_id: 36
   },
   {
-    state: 'Alabama',
+    state: 'Oregon',
     covid_data_id: 37
   },
   {
-    state: 'Alaska',
+    state: 'Pennsylvania',
     covid_data_id: 38
   },
   {
-    state: 'Alabama',
+    state: 'Rhode Island',
     covid_data_id: 39
   },
   {
-    state: 'Alaska',
+    state: 'South Carolina',
     covid_data_id: 40
   },
   {
-    state: 'Alabama',
+    state: 'South Dakota',
     covid_data_id: 41
   },
   {
-    state: 'Alaska',
+    state: 'Tennessee',
     covid_data_id: 42
   },
   {
-    state: 'Alabama',
+    state: 'Texas',
     covid_data_id: 43
   },
   {
-    state: 'Alaska',
+    state: 'Utah',
     covid_data_id: 44
   },
   {
-    state: 'Alabama',
+    state: 'Vermont',
     covid_data_id: 45
   },
   {
-    state: 'Alaska',
+    state: 'Virginia',
     covid_data_id: 46
   },
   {
-    state: 'Alabama',
+    state: 'Washington',
     covid_data_id: 47
   },
   {
-    state: 'Alaska',
+    state: 'West Virginia',
     covid_data_id: 48
   },
   {
-    state: 'Alabama',
+    state: 'Wisconsin',
     covid_data_id: 49
   },
   {
-    state: 'Alaska',
+    state: 'Wyoming',
     covid_data_id: 50
   },
 ];
