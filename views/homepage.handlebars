@@ -1,3 +1,13 @@
-{{#each galleries as |gallery|}}
-{{> gallery-details}}
-{{/each}}
+<ol class="post-list">
+  {{#each states as |state|}}
+  <li>
+    <article class="post">
+      <div class="title">
+       <span>{{state.state}}</span> 
+        
+      </div>
+      <div class="meta">
+    </article>
+  </li>
+  {{/each}}
+</ol>

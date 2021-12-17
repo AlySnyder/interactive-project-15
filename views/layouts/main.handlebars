@@ -2,36 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>Covid Map Tracker</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Luffy</h1>
+  <div class="wrapper">
+    <header>
+    <h1>
+      <a href="/">Covid Map Tracker</a>
+    </h1>
+    <nav>
+      <a href="/login">login</a>
+      <button id="logout" class="btn-no-style">logout</button>
+    </nav>
   </header>
-  <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Enjoy the galleries!</h2>
-    </aside>
-    <div class="gallery">
-      {{{body}}}
-    </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+      Thanks for visiting!
+    </footer>
+  </div>
+
+ <script src="/javascript/logout.js"></script>
 </body>
 
 </html>
