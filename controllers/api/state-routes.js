@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { States, Covid } = require("../../models");
 
 router.get('/:state', (req, res) => {
-  States.hasOne(Covid, {foreignKey: "id", sourceKey: "covid_data_id"})
   console.log('i am in states get')
   States.findOne({
     where: {

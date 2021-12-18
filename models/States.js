@@ -19,8 +19,8 @@ States.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-          model: 'covid',
-          key: 'id'
+        model: 'covid',
+        key: 'id'
       }
     }
   },
