@@ -1,14 +1,15 @@
 const router = require('express').Router();
 const { States, Covid } = require("../../models");
-const sequelize = require('../../config/connection');
 
-
-router.get('/', (req, res) => {
-    States.findAll({
-      attributes: ['id', 'state', 'covid_data_id'],
-      
-      
-    })
+router.get('/:state', (req, res) => {
+  States.hasOne(Covid, {foreignKey: "id", sourceKey: "covid_data_id"})
+  console.log('i am in states get')
+  States.findOne({
+    where: {
+      state: req.params.state
+    },
+    include: [Covid]
+  })
       .then(states => res.json(states))
       .catch(err => {
         console.log(err);
