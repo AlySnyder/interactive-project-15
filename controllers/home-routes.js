@@ -2,6 +2,20 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { States, Covid, User } = require('../models');
 
+
+
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  } 
+  res.render('login');
+});
+
+
+
+
+
 router.get('/', (req, res) => {
   console.log(req.session);
   States.findAll({
@@ -22,13 +36,6 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
 
-  res.render('login');
-});
 
 module.exports = router;

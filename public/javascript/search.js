@@ -6,9 +6,11 @@ async function submitHandler(event) {
   
     const state = document.querySelector('#search-state').value.trim();
     
+    
   
-    if (state) {
-     await fetch('/api/states/' + state, {
+    if (!state ) {
+    return alert("Please enter valid state")
+    } else await fetch('/api/states/' + state, {
         method: 'get',
         
       }).then(response => {
@@ -16,26 +18,20 @@ async function submitHandler(event) {
             response.json().then(function(data) {
                 displayState(data)
                 console.log(data);
+
             });
-        }
+        } 
          
       }) 
-
-
-  
-     
-    }
   };
 
   var displayState = function(state) {
     if (state.length === 0) {
-        
-
-        return;
+         return;
     }
 
    
-    // display city,time,weather description
+    
   
     var stateName = state.state_name;
     
@@ -46,7 +42,18 @@ async function submitHandler(event) {
     console.log(statePop);
     console.log(stateCases);
     console.log(stateDeaths);
-    document.getElementById("result").innerHTML = stateName;
+
+    const template = `
+    <div class="template-class">
+
+    <h2 class="state-name" >${stateName} 🦠 </h2> 
+    <p class="state-pop"> <span class="pop">Population</span>: ${statePop}</p> 
+    <p class="state-cases"> <span class="case">Cases</span>: ${stateCases}</p> 
+    <p class="state-death"> <span class="death">Deaths</span>: ${stateDeaths}<p/> 
+
+    </div>
+    `
+    document.getElementById("result").innerHTML = template;
 
 };
 
