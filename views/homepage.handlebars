@@ -1,13 +1,27 @@
-<ol class="post-list">
+<form class="search-form">
+  <div>
+    <label for="search-state">state:</label>
+    <input type="text" id="search-state" />
+  </div>
+  
+  <div>
+    <button type="submit">search</button>
+  </div>
+</form>
+
+
+
+<script src="/javascript/search.js"></script>
+
+
+<ul class="results">
   {{#each states as |state|}}
-  <li>
-    <article class="post">
-      <div class="title">
-       <span>{{state.state}}</span> 
+      <div class="title" id="result">
+        <ul id="state-cont">
+
+        </ul>
+       
         
       </div>
-      <div class="meta">
-    </article>
-  </li>
   {{/each}}
 </ol>

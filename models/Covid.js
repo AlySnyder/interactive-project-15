@@ -11,7 +11,7 @@ Covid.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    state: {
+    state_code: {
       type: DataTypes.STRING,
       allowNull: false,
     },

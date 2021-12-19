@@ -2,203 +2,203 @@ const { States } = require('../models');
 
 const statesData = [
   {
-    state: 'Alabama',
+    state_name: 'Alabama',
     covid_data_id: 1
   },
   {
-    state: 'Alaska',
+    state_name: 'Alaska',
     covid_data_id: 2
   },
   {
-    state: 'Arizona',
+    state_name: 'Arizona',
     covid_data_id: 3
   },
   {
-    state: 'Arkansas',
+    state_name: 'Arkansas',
     covid_data_id: 4
   },
   {
-    state: 'California',
+    state_name: 'California',
     covid_data_id: 5
   },
   {
-    state: 'Colorado',
+    state_name: 'Colorado',
     covid_data_id: 6
   },
   {
-    state: 'Connecticut',
+    state_name: 'Connecticut',
     covid_data_id: 7
   },
   {
-    state: 'Delaware',
+    state_name: 'Delaware',
     covid_data_id: 8
   },
   {
-    state: 'Florida',
+    state_name: 'Florida',
     covid_data_id: 9
   },
   {
-    state: 'Georgia',
+    state_name: 'Georgia',
     covid_data_id: 10
   },
   {
-    state: 'Hawaii',
+    state_name: 'Hawaii',
     covid_data_id: 11
   },
   {
-    state: 'Idaho',
+    state_name: 'Idaho',
     covid_data_id: 12
   },
   {
-    state: 'Illinois',
+    state_name: 'Illinois',
     covid_data_id: 13
   },
   {
-    state: 'Indiana',
+    state_name: 'Indiana',
     covid_data_id: 14
   },
   {
-    state: 'Iowa',
+    state_name: 'Iowa',
     covid_data_id: 15
   },
   {
-    state: 'Kansas',
+    state_name: 'Kansas',
     covid_data_id: 16
   },
   {
-    state: 'Kentucky',
+    state_name: 'Kentucky',
     covid_data_id: 17
   },
   {
-    state: 'Lousiana',
+    state_name: 'Lousiana',
     covid_data_id: 18
   },
   {
-    state: 'Maine',
+    state_name: 'Maine',
     covid_data_id: 19
   },
   {
-    state: 'Maryland',
+    state_name: 'Maryland',
     covid_data_id: 20
   },
   {
-    state: 'Massachusetts',
+    state_name: 'Massachusetts',
     covid_data_id: 21
   },
   {
-    state: 'Michigan',
+    state_name: 'Michigan',
     covid_data_id: 22
   },
   {
-    state: 'Minnesota',
+    state_name: 'Minnesota',
     covid_data_id: 23
   },
   {
-    state: 'Mississippi',
+    state_name: 'Mississippi',
     covid_data_id: 24
   },
   {
-    state: 'Missouri',
+    state_name: 'Missouri',
     covid_data_id: 25
   },
   {
-    state: 'Montana',
+    state_name: 'Montana',
     covid_data_id: 26
   },
   {
-    state: 'Nebraska',
+    state_name: 'Nebraska',
     covid_data_id: 27
   },
   {
-    state: 'Nevada',
+    state_name: 'Nevada',
     covid_data_id: 28
   },
   {
-    state: 'New Hampshire',
+    state_name: 'New Hampshire',
     covid_data_id: 29
   },
   {
-    state: 'New Jersey',
+    state_name: 'New Jersey',
     covid_data_id: 30
   },
   {
-    state: 'New Mexico',
+    state_name: 'New Mexico',
     covid_data_id: 31
   },
   {
-    state: 'New York',
+    state_name: 'New York',
     covid_data_id: 32
   },
   {
-    state: 'North Carolina',
+    state_name: 'North Carolina',
     covid_data_id: 33
   },
   {
-    state: 'North Dakota',
+    state_name: 'North Dakota',
     covid_data_id: 34
   },
   {
-    state: 'Ohio',
+    state_name: 'Ohio',
     covid_data_id: 35
   },
   {
-    state: 'Oklahoma',
+    state_name: 'Oklahoma',
     covid_data_id: 36
   },
   {
-    state: 'Oregon',
+    state_name: 'Oregon',
     covid_data_id: 37
   },
   {
-    state: 'Pennsylvania',
+    state_name: 'Pennsylvania',
     covid_data_id: 38
   },
   {
-    state: 'Rhode Island',
+    state_name: 'Rhode Island',
     covid_data_id: 39
   },
   {
-    state: 'South Carolina',
+    state_name: 'South Carolina',
     covid_data_id: 40
   },
   {
-    state: 'South Dakota',
+    state_name: 'South Dakota',
     covid_data_id: 41
   },
   {
-    state: 'Tennessee',
+    state_name: 'Tennessee',
     covid_data_id: 42
   },
   {
-    state: 'Texas',
+    state_name: 'Texas',
     covid_data_id: 43
   },
   {
-    state: 'Utah',
+    state_name: 'Utah',
     covid_data_id: 44
   },
   {
-    state: 'Vermont',
+    state_name: 'Vermont',
     covid_data_id: 45
   },
   {
-    state: 'Virginia',
+    state_name: 'Virginia',
     covid_data_id: 46
   },
   {
-    state: 'Washington',
+    state_name: 'Washington',
     covid_data_id: 47
   },
   {
-    state: 'West Virginia',
+    state_name: 'West Virginia',
     covid_data_id: 48
   },
   {
-    state: 'Wisconsin',
+    state_name: 'Wisconsin',
     covid_data_id: 49
   },
   {
-    state: 'Wyoming',
+    state_name: 'Wyoming',
     covid_data_id: 50
   },
 ];

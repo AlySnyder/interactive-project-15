@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
   States.findAll({
     attributes: [
       'id',
-      'state'
+      'state_name'
     ],
     
   })
