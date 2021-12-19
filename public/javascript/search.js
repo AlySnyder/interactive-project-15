@@ -1,5 +1,5 @@
 
-const stateInput = document.querySelector('#search-state');
+/*const stateInput = document.querySelector('#search-state');
 const resultsContainer = document.querySelector('#result');
 const stateCont = document.querySelector('#state-cont');
 
@@ -23,46 +23,44 @@ var submitHandler = function(event) {
     }
 };
 
-var getState = function(state) {
-
-    var stateDetails = ('api/states/' + state)
-
-    fetch(stateDetails).then(function(response) {
-        if (response.ok) {
-            response.json().then(function(data) {
-                displayState(data);
-                console.log(data);
-            });
-        } else {
-            alert("state not found");
-        }
-    })
-    .catch(function(error) {
-        // Notice this `.catch()` getting chained onto the end of the `.then()` method
-        alert("Unable to get state");
-      })
-};
-
-var displayState = function(weather) {
-    if (state.length === 0) {
-        resultsContainer.textContent = "State info not available";
-
-        return;
-    }
-  
-    resultsContainer.textContent = "";
-    var stateFacts = state.state_name;
-    console.log(stateFacts);
-    var infoDiv = document.createElement("div");
+async function getState(state) {
+    if (state) {
+        const response = await fetch(`/api/${state}`, {
+          method: 'get',
+          body: JSON.stringify({
+            state_name
+          }),
+          headers: { 'Content-Type': 'application/json' }
+          // headers: { 'Content-Type': 'application/json' }
+        });
     
-    stateLi = document.createElement("li");
-    stateTitle.textContent = stateFacts
-    stateCont.appendChild(stateTitle);
-    infoDiv.appendChild(stateCont);
-    resultsContainer.appendChild(infoDiv);
-    stateTitle.style.cssText = "font-size: 30px; font-weight: bold; margin-bottom: 20px;"
-    console.log(stateFacts);
+      
+      }
+
+    
 };
+*/
+
+
+async function submitHandler(event) {
+    event.preventDefault();
+  
+    const state = document.querySelector('#search-state').value.trim();
+    
+  
+    if (state) {
+      const response = await fetch('/api/states/' + state, {
+        method: 'get',
+      });
+  
+      if (response.ok) {
+        console.log(state);
+      } else {
+        alert(response.statusText);
+      }
+    }
+  }
+
 
   
   document.querySelector('.search-form').addEventListener('submit', submitHandler);

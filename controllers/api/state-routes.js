@@ -20,11 +20,10 @@ router.get('/', (req, res) => {
 router.get('/:state', (req, res) => {
   States.findOne({
     where: {
-      state_name: req.params.state_name
+      state_name: req.params.state
     },
     include: [Covid]
-  })
-      .then(states => res.json(states))
+  }).then(state => res.json(state))
       .catch(err => {
         console.log(err);
         res.status(500).json(err);
