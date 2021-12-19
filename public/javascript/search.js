@@ -13,21 +13,42 @@ async function submitHandler(event) {
         
       }).then(response => {
         if(response.ok){
-            return response.json();  
+            response.json().then(function(data) {
+                displayState(data)
+                console.log(data);
+            });
         }
-          throw new Error('Request failed!');
-      }, networkError => {
-        console.log(networkError.message);
-      }).then(jsonResponse => {
-        console.log(jsonResponse);
+         
       }) 
 
 
   
      
     }
-  }
+  };
 
+  var displayState = function(state) {
+    if (state.length === 0) {
+        
+
+        return;
+    }
+
+   
+    // display city,time,weather description
+  
+    var stateName = state.state_name;
+    
+    var statePop = state.covid.population;
+    var stateCases = state.covid.cases;
+    var stateDeaths = state.covid.deaths;
+    console.log(stateName);
+    console.log(statePop);
+    console.log(stateCases);
+    console.log(stateDeaths);
+    document.getElementById("result").innerHTML = stateName;
+
+};
 
   
   document.querySelector('.search-form').addEventListener('submit', submitHandler);
