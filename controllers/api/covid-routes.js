@@ -5,7 +5,7 @@ const sequelize = require('../../config/connection');
 
 router.get('/', (req, res) => {
     Covid.findAll({
-      attributes: ['id', 'state', 'population', 'cases', 'deaths'],
+      attributes: ['id', 'state_code', 'population', 'cases', 'deaths'],
       
       
     })

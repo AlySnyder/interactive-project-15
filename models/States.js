@@ -11,7 +11,7 @@ States.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    state: {
+    state_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },

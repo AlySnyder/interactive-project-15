@@ -6,6 +6,6 @@ const covidRoutes = require('./covid-routes');
 
 router.use('/users', userRoutes);
 router.use('/states', stateRoutes);
-router.use('/covid-statistics', covidRoutes);
+router.use('/covid', covidRoutes);
 
 module.exports = router;

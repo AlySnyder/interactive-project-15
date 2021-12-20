@@ -18,6 +18,7 @@ async function signupFormHandler(event) {
   
       // check the response status
       if (response.ok) {
+        document.location.replace('/search');
         console.log('success');
       } else {
         alert(response.statusText);
@@ -48,7 +49,9 @@ async function signupFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/search');
+        
+
       } else {
         alert(response.statusText);
       }

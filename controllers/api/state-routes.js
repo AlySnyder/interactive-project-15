@@ -1,15 +1,28 @@
 const router = require('express').Router();
 const { States, Covid } = require("../../models");
 
+
+router.get('/', (req, res) => {
+  States.findAll({
+    attributes: ['id', 'state_name'],
+    
+    
+  })
+    .then(states => res.json(states))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+
 router.get('/:state', (req, res) => {
-  console.log('i am in states get')
   States.findOne({
     where: {
-      state: req.params.state
+      state_name: req.params.state
     },
     include: [Covid]
-  })
-      .then(states => res.json(states))
+  }).then(state => res.json(state))
       .catch(err => {
         console.log(err);
         res.status(500).json(err);

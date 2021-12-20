@@ -11,11 +11,10 @@ Covid.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // state: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    //   as: "state_code"
-    // },
+    state_code: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     population: {
       type: DataTypes.INTEGER,
       allowNull: false,

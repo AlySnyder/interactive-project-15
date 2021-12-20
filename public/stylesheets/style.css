@@ -168,6 +168,25 @@
   .edit-post-form {
     margin-bottom: 5%;
   }
+
+  .template-cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .pop  {
+    font-weight: bold;
+  }
+
+  .case {
+    font-weight: bold;
+  }
+
+  .death  {
+    font-weight: bold;
+  }
   
   footer {
     border-top: 1px solid #ccc;
