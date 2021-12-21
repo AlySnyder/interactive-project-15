@@ -1,0 +1,128 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#00000">
+        <Title>Corona Virus (COVID-19) Tracker</Title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root">
+            <div class="mapbox-container">
+                <div class="mapBox mapboxgl-map">
+                    <div class="mapboxgl-canary" style="visibility: hidden;">
+                    </div>
+                    <div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate">
+                        <canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" role="region" width="844" height="850" style="width: 844px; height: 850px;">
+                        </canvas></div>
+                        <div class="mapboxgl-control-container">
+                            <div class="mapboxgl-ctrl-top-left">
+
+                            </div>
+                            <div class="mapboxgl-ctrl-top-right">
+
+                            </div>
+                            <div class="mapboxgl-ctrl-bottom-left">
+                                <div class="mapboxgl-ctrl" style="display: none;">
+                                    <a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"> </a>
+                                </div>
+                            </div>
+                            <div class="mapboxgl-ctrl-bottom-right">
+                                <div class="mapboxgl-ctrl mapboxgl-ctrl-group">
+                                    <button class="mapboxgl-ctrl-zoom-in" type="button" title="Zoom in" aria-label="Zoom in" aria-disabled="false">
+                                        <span class="mapboxgl-ctrl-icon" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button class="mapboxgl-ctrl-zoom-out" type="button" title="Zoom out" aria-label="Zoom out" aria-disabled="false">
+                                        <span class="mapboxgl-ctrl-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="mapboxgl-ctrl-compass" type="button" title="Reset bearing to north" aria-label="Reset bearing to north">
+                                        <span class="mapboxgl-ctrl-icon" aria-hidden="true" style="transform: rotate(0deg);"></span>
+                                    </button></div>
+                                    <div class="mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-attrib-empty">
+                                        <button class="mapboxgl-ctrl-attrib-button" title="Toggle attribution" aria-label="Toggle attribution"></button>
+                                        <div class="mapboxgl-ctrl-attrib-inner" role="list"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="corona-parent-container">
+                        <div class="header-menu-container">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="header-label">Login</a>
+                            <a href="" target="_blank" rel="noopener noreferrer" class="header-label">More Info</a>
+                            <span class="header-label">About</span>
+                        </div>
+                        <div class="tooltip-container">
+                            <img src="" class="map-style-dark-img" alt="Dark Theme">
+                            <img src="" class="map-style-light-img" alt="Light Theme"></div>
+                            <div class="map-box-container"></div>
+                            <div class="parent-container">
+                                <div class="list-container">
+                                    <div class="header-container">
+                                        <div class="covid-label-container">
+                                            <p class="covid-label">Coronavirus (COVID-19) Tracker</p>
+                                            <p class="covid-desc-txt">Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019. The disease has since spread worldwide, leading to an ongoing pandemic;
+                                                <span class="total-confirmed-count"></span> 274M confirmed cases are being recorded since then.</p>
+                                                <p class="covid-desc-txt">To get up to date results, this website collects the data from our own designed API.
+                                                    <a href="" target="_blank" rel="noopener noreferrer" class="covid-desc-link-txt">.</a>
+                                                </p><p class="covid-desc-txt">If you want to know more about the development of this website then visit 
+                                                    <a href="" target="_blank" rel="noopener noreferrer" class="covid-desc-link-txt">Covid 19 full stack application.</a></p>
+                                                </div>
+                                                <div class="covid-date-container">
+                                                    <span class="covid-timeline-label">Last Updated: <break> 12/18/2021 </break></span>
+                                                    <span class="covid-timeline"></span>
+                                                </div>
+                                                <div class="total-statistics-container">
+                                                    <div class="total-death-recovery-container">
+                                                        <div class="dr-container">
+                                                            <span class="total-confirmed-count"></span>
+                                                            <span class="dr-confirmed-label">CONFIRMED</span>
+                                                        </div>
+                                                        <div class="dr-container">
+                                                            <span class="total-deaths-count"></span>
+                                                            <span class="dr-deaths-label">DEATHS</span>
+                                                        </div>
+                                                        <div class="dr-container">
+                                                            <span class="total-recovered-count"></span>
+                                                            <span class="dr-recovered-label">RECOVERED</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="header-bottom-line"></div>
+                                            <div class="search-container">
+                                                <div class="search-input-border">
+                                                    <img src="./Coronavirus (COVID-19) Tracker_files/ic_search.png" alt="Search" class="search-icon">
+                                                    <input type="text" class="search-input-text" placeholder="Search State"></div>
+                                                </div>
+                                                <div class="counrty-statistics-list-container">
+                                                    <div class="progress-loading-container">
+                                                        <div size="60" color="black" class="sc-fzpans iOYHpY orbit-spinner">
+                                                            <div class="orbit one"></div>
+                                                            <div class="orbit two"></div>
+                                                            <div class="orbit three"></div>
+                                                        </div>
+                                                        <p class="please-wait-text">Please wait...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-tab-menu-container">
+                                            <div class="total-cases-selected-tab-menu-container">
+                                                <img src="./Coronavirus (COVID-19) Tracker_files/ic_selected_list.svg" alt="Total Cases" class="total-cases-icon">
+                                                <span class="total-cases-selected-label">Total Cases</span></div>
+                                                <div class="map-tab-menu-container">
+                                                    <img src="./Coronavirus (COVID-19) Tracker_files/ic_map.svg" alt="Map" class="map-icon">
+                                                    <span class="map-label">Map</span></div>
+                                                    <div class="about-tab-menu-container">
+                                                        <img src="./Coronavirus (COVID-19) Tracker_files/ic_info.svg" alt="About" class="about-icon">
+                                                        <span class="about-label">About</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    </body>
+</html>
