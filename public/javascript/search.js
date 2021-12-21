@@ -5,7 +5,7 @@ async function searchFormHandler(event) {
     const searchState = document.querySelector('#search-state').value.trim();
   
     if (searchState) {
-      const response = await fetch(`/api/${searchState}`, {
+      const response = await fetch(`/api/states/${searchState}`, {
         method: 'get',
         // headers: { 'Content-Type': 'application/json' }
       });

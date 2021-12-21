@@ -22,6 +22,11 @@ router.get('/search', (req, res) => {
 
 router.get('/', (req, res) => {
   console.log(req.session);
+
+  if (!req.session.loggedIn) {
+    res.redirect('/login');
+  }
+
   States.findAll({
     attributes: [
       'id',
