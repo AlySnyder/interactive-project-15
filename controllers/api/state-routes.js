@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { States, Covid } = require("../../models");
 
 
-
 router.get('/', (req, res) => {
   States.findAll({
     attributes: ['id', 'state_name'],

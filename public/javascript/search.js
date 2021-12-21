@@ -1,6 +1,3 @@
-
-
-
 async function submitHandler(event) {
     event.preventDefault();
   
@@ -45,12 +42,10 @@ async function submitHandler(event) {
 
     const template = `
     <div class="template-class">
-
     <h2 class="state-name" >${stateName} 🦠 </h2> 
     <p class="state-pop"> <span class="pop">Population</span>: ${statePop}</p> 
     <p class="state-cases"> <span class="case">Cases</span>: ${stateCases}</p> 
     <p class="state-death"> <span class="death">Deaths</span>: ${stateDeaths}<p/> 
-
     </div>
     `
     document.getElementById("result").innerHTML = template;
