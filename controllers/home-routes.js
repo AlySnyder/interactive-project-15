@@ -6,7 +6,7 @@ const { States, Covid, User } = require('../models');
 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/search');
+    res.redirect('/mystates');
     return;
   }
 
@@ -15,7 +15,7 @@ router.get('/login', (req, res) => {
 
 router.get('/signup', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/search');
+    res.redirect('/mystates');
     return;
   }
 
@@ -23,10 +23,10 @@ router.get('/signup', (req, res) => {
 });
 
 
-router.get('/search', (req, res) => {
+router.get('/mystates', (req, res) => {
   if (req.session.loggedIn) {
   
-  res.render('search');
+  res.render('mystates');
   } else res.render('login')
 });
 
