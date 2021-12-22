@@ -1,44 +1,31 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { States, Covid, User } = require('../models');
-
-
-
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-
-    res.render('search');
-  } else res.render('login')
-  
-});
-
-
-router.get('/search', (req, res) => {
-  if (req.session.loggedIn) {
-  
-  res.render('search');
-  } else res.render('login')
-});
+const { States, Covid, User, Favorites } = require('../models');
 
 
 router.get('/', (req, res) => {
-  console.log(req.session);
+  console.log('======================');
+  Favorites.findAll({
 
-  if (!req.session.loggedIn) {
-    res.redirect('/login');
-  }
-
-  States.findAll({
+    
     attributes: [
       'id',
-      'state_name'
+        'fav_name',
+        'fav_pop',
+        'fav_case',
+        'fav_death'
     ],
-    
+
   })
     .then(dbPostData => {
-      // pass a single post object into the homepage template
-      const states = dbPostData.map(post => post.get({ plain: true }));
-      res.render('homepage', { states });
+      const faves = dbPostData.map(post => post.get({ plain: true }));
+
+      res.render('homepage', { 
+        faves,
+        loggedIn: req.session.loggedIn
+        
+       });
+      
     })
     .catch(err => {
       console.log(err);
@@ -46,8 +33,9 @@ router.get('/', (req, res) => {
     });
 });
 
-
-    res.redirect('/search');
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/mystates');
     return;
   }
 
@@ -56,45 +44,12 @@ router.get('/', (req, res) => {
 
 router.get('/signup', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/search');
+    res.redirect('/mystates');
     return;
   }
 
   res.render('signup');
 });
-
-
-router.get('/search', (req, res) => {
-  if (req.session.loggedIn) {
-  
-  res.render('search');
-  } else res.render('login')
-});
-
-
-router.get('/', (req, res) => {
-  console.log(req.session);
-  States.findAll({
-    attributes: [
-      'id',
-      'state_name'
-    ],
-    
-  })
-    .then(dbPostData => {
-      // pass a single post object into the homepage template
-      const states = dbPostData.map(post => post.get({ plain: true }));
-      res.render('homepage', { 
-        states,
-        
-       });
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
-
 
 
 module.exports = router;

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Covid Map Tracker</title>
+  <title>Covid Tracker</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -15,19 +15,20 @@
       <a href="/">Covid Map Tracker</a>
     </h1>
     <nav>
-      
+      {{#if loggedIn}}
+       <a class="mystates-class" href="/mystates">My States</a>
       <button id="logout" class="btn-no-style">Logout</button>
-      
+      {{else}}
       <a href="/login">Login</a>
-      <a href="/signup">Sign Up</a>
-      
+      <a href="/signup" class="sign-up-btn">Sign Up</a>
+      {{/if}}
     </nav>
   </header>
     <main>
       {{{ body }}}
     </main>
     <footer>
-      Thanks for visiting!
+      :)
     </footer>
   </div>
 

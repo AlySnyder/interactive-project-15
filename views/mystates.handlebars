@@ -1,0 +1,49 @@
+<section class="search-cont">
+  <div>
+    <h1>Search a state. <span class="link-class">(these are volume statistics,<br> for more information, visit <a href="https://www.cdc.gov/">www.cdc.gov</a></span>)</h1>
+<form class="search-form">
+
+  <div>
+    <label for="search-state"></label>
+    <input type="text" id="search-state" />
+  </div>
+  
+  <div>
+    <button type="submit">Search</button>
+  </div>
+</form>
+
+<form class="list-form">
+  <div>
+    <button type="submit">Add To Favorites</button>
+  </div>
+</form>
+</div>
+<div class="template-cont" id="result">
+        
+      </div>
+</section>
+
+<h2 class="fave-h2">Favorites</h2>
+{{#if favorites.length}}
+<section class="faves-cont">
+ 
+  <ul style="list-style: none;" class="post-cont">
+    {{#each favorites as |faves|}}
+    <li>
+      {{> view-info faves}}
+      
+    </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}
+
+   
+
+
+
+
+
+<script src="/javascript/search.js"></script>
+<script src="/javascript/favorite.js"></script>

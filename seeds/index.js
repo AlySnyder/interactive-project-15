@@ -9,6 +9,7 @@ const seedAll = async () => {
   
   await seedStates();
 
+
   process.exit(0);
 };
 
