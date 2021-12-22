@@ -51,6 +51,8 @@ async function submitHandler(event) {
     <p class="state-cases"> <span class="case">Cases</span>:<span id="state-cases">${stateCases}</span></p> 
     <p class="state-death"> <span class="death">Deaths</span>:<span id="state-deaths">${stateDeaths}</span><p/> 
 
+
+  
     </div>
     `
     document.getElementById("result").innerHTML = template;

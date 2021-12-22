@@ -20,10 +20,11 @@ async function favFormHandler(event) {
     });
   
     if (response.ok) {
+      console.log("Data posted successgully");
       document.location.replace('/mystates');
     } else {
-      //alert(response.statusText);
-      console.log(fav_name, fav_pop, fav_case, fav_death);
+      alert(response.statusText);
+      
     }
   }
   

@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { States, Covid, User } = require('../models');
+const { States, Covid, User, Favorites } = require('../models');
 
 
 
@@ -23,30 +23,32 @@ router.get('/signup', (req, res) => {
 });
 
 
-router.get('/mystates', (req, res) => {
-  if (req.session.loggedIn) {
-  
-  res.render('mystates');
-  } else res.render('login')
-});
+
 
 
 router.get('/', (req, res) => {
-  console.log(req.session);
-  States.findAll({
+  console.log('======================');
+  Favorites.findAll({
+
+    
     attributes: [
       'id',
-      'state_name'
+        'fav_name',
+        'fav_pop',
+        'fav_case',
+        'fav_death'
     ],
-    
+
   })
     .then(dbPostData => {
-      // pass a single post object into the homepage template
-      const states = dbPostData.map(post => post.get({ plain: true }));
+      const faves = dbPostData.map(post => post.get({ plain: true }));
+
       res.render('homepage', { 
-        states,
+        faves,
+        loggedIn: req.session.loggedIn
         
        });
+      
     })
     .catch(err => {
       console.log(err);
