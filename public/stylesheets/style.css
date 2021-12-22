@@ -12,17 +12,17 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #112338;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #16283d;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #1b2e44;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +33,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #182c46;
   }
   
   .post-list {
@@ -49,7 +49,7 @@
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #152841;
   }
   
   textarea {
@@ -205,7 +205,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(10, 19, 39);
     padding: 50px;
   
   }
@@ -230,7 +230,7 @@
   }
 
   .edit-link {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(12, 24, 39);
     color: rgb(255, 255, 255);
     font-style: italic;
     text-align: center;
@@ -243,6 +243,11 @@
     color: #7d7d7d;
   }
 
+  .fave-h2 {
+    text-align: center;
+    color: black;
+    font-size: 26px;
+  }
 
 
 
