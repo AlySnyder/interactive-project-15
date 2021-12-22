@@ -4,23 +4,6 @@ const { States, Covid, User, Favorites } = require('../models');
 
 
 
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/mystates');
-    return;
-  }
-
-  res.render('login');
-});
-
-router.get('/signup', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/mystates');
-    return;
-  }
-
-  res.render('signup');
-});
 
 
 
@@ -54,6 +37,23 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/mystates');
+    return;
+  }
+
+  res.render('login');
+});
+
+router.get('/signup', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/mystates');
+    return;
+  }
+
+  res.render('signup');
+});
 
 
 module.exports = router;
