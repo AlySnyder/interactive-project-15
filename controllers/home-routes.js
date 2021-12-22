@@ -24,8 +24,6 @@ router.get('/signup', (req, res) => {
 
 
 
-
-
 router.get('/', (req, res) => {
   console.log('======================');
   Favorites.findAll({
