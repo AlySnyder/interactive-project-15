@@ -1,8 +1,8 @@
 async function favFormHandler(event) {
     event.preventDefault();
   
-    const fav_name = document.querySelector('#state-name').innerText;
-    const fav_pop = document.querySelector('#state-pop').innerText;
+    const fav_name = document.querySelector('#state-name').textContent;
+    const fav_pop = document.querySelector('#state-pop').textContent;
     const fav_case = document.querySelector('#state-cases').textContent;
     const fav_death = document.querySelector('#state-deaths').textContent;
   
@@ -23,7 +23,7 @@ async function favFormHandler(event) {
       document.location.replace('/mystates');
     } else {
       //alert(response.statusText);
-      console.log(fav_name, fav_pop);
+      console.log(fav_name, fav_pop, fav_case, fav_death);
     }
   }
   

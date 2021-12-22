@@ -46,10 +46,10 @@ async function submitHandler(event) {
     const template = `
     <div class="template-class">
 
-    <h2 id="state-name" class="state-name" >${stateName} 🦠 </h2> 
-    <p id="state-pop" class="state-pop"> <span class="pop">Population</span>: ${statePop}</p> 
-    <p id="state-cases" class="state-cases"> <span class="case">Cases</span>: ${stateCases}</p> 
-    <p id="state-deaths" class="state-death"> <span class="death">Deaths</span>: ${stateDeaths}<p/> 
+    <h2 class="state-name" ><span id="state-name">${stateName}</span> 🦠 </h2> 
+    <p class="state-pop"> <span class="pop">Population</span>:<span id="state-pop">${statePop}</span></p> 
+    <p class="state-cases"> <span class="case">Cases</span>:<span id="state-cases">${stateCases}</span></p> 
+    <p class="state-death"> <span class="death">Deaths</span>:<span id="state-deaths">${stateDeaths}</span><p/> 
 
     </div>
     `
