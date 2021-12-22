@@ -1,4 +1,5 @@
-
+<section class="search-cont">
+  <div>
 <form class="search-form">
   <h3>Search a state to view COVID-19 facts.</h3>
   <div>
@@ -16,28 +17,29 @@
     <button type="submit">Add To Favorites</button>
   </div>
 </form>
-
-
-   <div class="template-cont" id="result">
+</div>
+<div class="template-cont" id="result">
         
       </div>
+</section>
+
+{{#if favorites.length}}
+<section class="faves-cont">
+  <h1>Favorites</h1>
+  <ul>
+    {{#each favorites as |faves|}}
+    <li>
+      {{> view-info faves}}
+      <a href="/mystates/info/{{faves.id}}" class="edit-link">Expand</a>
+    </li>
+    {{/each}}
+  </ul>
+</section>
+{{/if}}
+
+   
 
 
-<ol class="post-list">
-  {{#each favorites as |fave|}}
-  <li>
-    <article class="post">
-      <div class="title">
-        <a href="/post/{{fave.id}}">{{fave.fav_name}}</a>
-       
-      </div>
-      <div class="meta">
- 
-      </div>
-    </article>
-  </li>
-  {{/each}}
-</ol>
 
 
 
