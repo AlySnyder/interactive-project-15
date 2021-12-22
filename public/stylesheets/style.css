@@ -257,6 +257,10 @@
     border-radius: 6px;
   }
 
+  .sign-up-btn {
+    margin-left: 10px;
+  }
+
   footer {
     border-top: 1px solid #ccc;
     display: flex;
