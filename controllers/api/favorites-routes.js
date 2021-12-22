@@ -9,7 +9,8 @@ router.post('/', (req, res) => {
       fav_name: req.body.fav_name,
       fav_pop: req.body.fav_pop,
       fav_case: req.body.fav_case,
-      fav_death: req.body.fav_death
+      fav_death: req.body.fav_death,
+      user_id: req.session.user_id
     })
       .then(dbFavData => res.json(dbFavData))
       .catch(err => {
@@ -20,7 +21,7 @@ router.post('/', (req, res) => {
 
   router.get('/', (req, res) => {
     Favorites.findAll({
-      attributes: ['id', 'fav_name', 'fav_pop', 'fav_case', 'fav_death'],
+      attributes: ['id', 'fav_name', 'fav_pop', 'fav_case', 'fav_death', 'user_id'],
       
       
     })

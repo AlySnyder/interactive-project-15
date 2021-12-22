@@ -9,13 +9,17 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
   Favorites.findAll({
-  
+     where: {
+      // use the ID from the session
+      user_id: req.session.user_id
+    },
     attributes: [
       'id',
       'fav_name',
       'fav_pop',
       'fav_case',
-      'fav_death'
+      'fav_death',
+      'user_id'
     ]
   
   })
