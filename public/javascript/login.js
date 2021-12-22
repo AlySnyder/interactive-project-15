@@ -19,7 +19,7 @@
       });
   
       if (response.ok) {
-        document.location.replace('/search');
+        document.location.replace('/mystates');
         
 
       } else {

@@ -12,17 +12,17 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #112338;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #16283d;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #1b2e44;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +33,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #182c46;
   }
   
   .post-list {
@@ -49,7 +49,7 @@
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #152841;
   }
   
   textarea {
@@ -97,7 +97,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #07121f;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -121,12 +121,7 @@
     margin-bottom: 2%;
     line-height: 150%;
   }
-  
-  .post .title span {
-    font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
-  }
+
   
   .edit-link {
     display: block;
@@ -187,7 +182,81 @@
   .death  {
     font-weight: bold;
   }
+
+  .fav-div {
+    font-weight: bold;
+  }
+
+
+
+  .template-cont {
+   
+  }
+
+  .faves-cont {
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: row;
+   flex-wrap: wrap;
   
+  }
+
+  .search-cont {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    border-bottom: 5px solid rgb(10, 19, 39);
+    padding: 50px;
+  
+  }
+
+  .post-cont {
+  
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+    flex-wrap: wrap;
+   
+    
+  }
+  
+
+  .card-class {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-radius: 7px;
+    padding: 10px;
+  }
+
+  .edit-link {
+    background-color: rgb(12, 24, 39);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-align: center;
+    padding: 7px;
+    border-radius: 7px;
+  }
+
+  .link-class {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+  }
+
+  .fave-h2 {
+    text-align: center;
+    color: black;
+    font-size: 26px;
+  }
+
+  .first-href {
+    background-color: rgb(18, 18, 43);
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+  }
+
   footer {
     border-top: 1px solid #ccc;
     display: flex;

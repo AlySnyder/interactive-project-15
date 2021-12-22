@@ -18,7 +18,7 @@ async function signupFormHandler(event) {
   
       // check the response status
       if (response.ok) {
-        document.location.replace('/search');
+        document.location.replace('/mystates');
         console.log('success');
       } else {
         alert(response.statusText);
