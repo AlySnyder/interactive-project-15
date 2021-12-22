@@ -1,9 +1,10 @@
 <section class="search-cont">
   <div>
+    <h1>Search a state. <span class="link-class">(for more information, visit <a href="www.cdc.gov">www.cdc.gov</a></span>.)</h1>
 <form class="search-form">
-  <h3>Search a state to view COVID-19 facts.</h3>
+
   <div>
-    <label for="search-state">State:</label>
+    <label for="search-state"></label>
     <input type="text" id="search-state" />
   </div>
   
@@ -23,14 +24,15 @@
       </div>
 </section>
 
+<h2>Favorites</h2>
 {{#if favorites.length}}
 <section class="faves-cont">
-  <h1>Favorites</h1>
-  <ul>
+ 
+  <ul style="list-style: none;" class="post-cont">
     {{#each favorites as |faves|}}
     <li>
       {{> view-info faves}}
-      <a href="/mystates/info/{{faves.id}}" class="edit-link">Expand</a>
+      
     </li>
     {{/each}}
   </ul>

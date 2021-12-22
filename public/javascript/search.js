@@ -44,7 +44,7 @@ async function submitHandler(event) {
     console.log(stateDeaths);
 
     const template = `
-    <div class="template-class">
+    <div class="card-class">
 
     <h2 class="state-name" ><span id="state-name">${stateName}</span> 🦠 </h2> 
     <p class="state-pop"> <span class="pop">Population</span>:<span id="state-pop">${statePop}</span></p> 
