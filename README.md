@@ -37,16 +37,17 @@ This app is governed by MIT license.
 
 ## Contributers 
 
-Hector Perez - (https://gentle-brook-44437.herokuapp.com)[https://gentle-brook-44437.herokuapp.com]
-
-Alex Snyder - (https://gentle-brook-44437.herokuapp.com)[https://gentle-brook-44437.herokuapp.com]
-
-Marcos Manresa - (https://gentle-brook-44437.herokuapp.com)[https://github.com/MarcosManresa]
+If you are interested in contributing to this project , feel free to reach me via e-mail at alystrife@gmail.com.
 
 
 ## Credits 
 
-Alex Snyder, google.com, stackoverflow 
+Hector Perez - (Hector Perez)[https://github.com/hpere102]
+
+Alex Snyder - (Alex Snyder)[https://gentle-brook-44437.herokuapp.com]
+
+Marcos Manresa - (Marcos Manresa)[https://github.com/MarcosManresa]
+
 
 ## Questions
 
