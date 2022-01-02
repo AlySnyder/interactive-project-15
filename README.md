@@ -55,5 +55,4 @@ Marcos Manresa - (Marcos Manresa)[https://github.com/MarcosManresa]
 
 ## Questions
 
-If you have any questions , feel free to reach me via e-mail at alystrife@gmail.com For any code related questions or to look at my other projects , check out my Github at www.github.com/alysnyder
-
+If you have any questions , feel free to any of the contributers listed on this repo by clicking the link to their profile, you can reach me via e-mail at alystrife@gmail.com. 
