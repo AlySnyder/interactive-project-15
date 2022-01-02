@@ -24,7 +24,7 @@ No installation is needed as our Covid19 tracker is live and deployed.
 
 Please access our app using the link below. 
 
-(https://gentle-brook-44437.herokuapp.com)[https://gentle-brook-44437.herokuapp.com]
+(Covid19 Activity Tracker)[https://quiet-badlands-14441.herokuapp.com]
 
 
 ## Tests
